@@ -1,6 +1,5 @@
 {
     "name": "Vaultwarden Development Container",
-    "runArgs": ["--cap-add=SYS_ADMIN", "--privileged"],
     "postCreateCommand": "bash .devcontainer/post-create.sh",
     "forwardPorts": [80],
     "portsAttributes": {
