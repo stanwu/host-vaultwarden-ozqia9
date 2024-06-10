@@ -1,6 +1,5 @@
 {
     "name": "Vaultwarden Development Container",
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
     "runArgs": ["--cap-add=SYS_ADMIN", "--privileged"],
     "postCreateCommand": "docker pull vaultwarden/server && docker run -d --name vaultwarden -v /data:/data -p 80:80 vaultwarden/server",
     "forwardPorts": [80],
