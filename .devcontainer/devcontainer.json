@@ -1,5 +1,14 @@
 {
-    "name": "Build kernel source code",
-    "postCreateCommand": "bash .devcontainer/post-create.sh",
-    "postStartCommand": "bash .devcontainer/post-start.sh"
+    "name": "Vaultwarden Development Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+    "runArgs": ["--cap-add=SYS_ADMIN", "--privileged"],
+    "postCreateCommand": "docker pull vaultwarden/server && docker run -d --name vaultwarden -v /data:/data -p 80:80 vaultwarden/server",
+    "forwardPorts": [80],
+    "portsAttributes": {
+        "80": {
+            "label": "Vaultwarden",
+            "onAutoForward": "openBrowser"
+        }
+    },
+    "remoteUser": "vscode"
 }
