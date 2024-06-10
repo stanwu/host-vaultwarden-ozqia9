@@ -8,7 +8,33 @@ Do you need a temporary password manager hosting service? This project will prov
 ./run.sh
 ```
 
-you would got a temporary teamwork password manager now.
+You would got a temporary teamwork password manager now.
+
+### Backup or Resotre your vault
+
+We just backup data folder or restore data folder
+
+**Backup folder**
+
+Step 1.
+```
+tar cvzf vault-data.tgz data
+```
+
+Step 2.
+
+Download vault-data.tgz to your local storage
+
+**Restore folder**
+
+Step 1.
+
+Upload vault-data.tgz to Codespaces from your local storage (drag and drop file into Codespaces)
+
+Step 2.
+```
+tar xvzf vault-data.tgz
+```
 
 ### Advantages of Using This Temporary Password Vault
 
