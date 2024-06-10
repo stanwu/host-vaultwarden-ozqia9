@@ -1,7 +1,7 @@
 {
     "name": "Vaultwarden Development Container",
     "runArgs": ["--cap-add=SYS_ADMIN", "--privileged"],
-    "postCreateCommand": "docker pull vaultwarden/server && docker run -d --name vaultwarden -v /data:/data -p 80:80 vaultwarden/server",
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
     "forwardPorts": [80],
     "portsAttributes": {
         "80": {
