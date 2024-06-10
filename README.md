@@ -8,4 +8,11 @@ Do you need a temporary password manager hosting service? This project will prov
 ./run.sh
 ```
 
-you got a temporary teamwork password manager now.
+you would got a temporary teamwork password manager now.
+
+### Advantages of Using This Temporary Password Vault
+
+1. Temporary service allows immediate setup for temporary projects without the need for complex server configuration.
+2. It is not always online, only activated when needed.
+3. Automatically destroys itself after use, but you can export the passwords if necessary.
+
