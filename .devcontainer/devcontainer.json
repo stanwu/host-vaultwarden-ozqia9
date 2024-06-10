@@ -1,12 +1,4 @@
 {
     "name": "Vaultwarden Development Container",
-    "postCreateCommand": "bash .devcontainer/post-create.sh",
-    "forwardPorts": [80],
-    "portsAttributes": {
-        "80": {
-            "label": "Vaultwarden",
-            "onAutoForward": "openBrowser"
-        }
-    },
-    "remoteUser": "vscode"
+    "postCreateCommand": "bash .devcontainer/post-create.sh"
 }
